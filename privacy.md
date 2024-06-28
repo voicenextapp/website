@@ -79,7 +79,7 @@ voicenext takes the security of your personal information seriously. voicenext u
 
 ## 14. Deletion
 
-You may delete your account at any time if you no longer wish to use the voicenext service. When you delete your account, voicenext will delete your personal information from its servers. voicenext may retain certain information about you for legal or business purposes, such as to comply with legal obligations or resolve disputes. The voicenext service will delete voicenotes older than 24 hours automatically. If you save a voicenote, it will be stored on our servers until you delete it. If you delete your account it may take up to 48 hours to delete all your messages from our servers.
+You may delete your account at any time if you no longer wish to use the voicenext service. When you delete your account, voicenext will delete your personal information from its servers. voicenext may retain certain information about you for legal or business purposes, such as to comply with legal obligations or resolve disputes. The voicenext service will delete voicenotes older than 24 hours automatically. If you save a voicenote, it will be stored on our servers until you unsave it. If you delete your account it may take up to 48 hours to delete all your messages from our servers.
 
 ## 15. Right to view
 

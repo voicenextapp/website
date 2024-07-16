@@ -44,7 +44,7 @@ If you sign up for the service voicenext will create a public profile for you. T
 
 ## 9. Phone number and contacts
 
-If you sign up for the service with your phone number, voicenext will verify your phone number by sending you a verification code. Once your phone number is verified, you may use the voicenext service. voicenext may also access your contacts to help you find friends who are using the voicenext service. voicenext will not share your contacts with third parties without your permission. We will keep an encrypted copy of your contacts phone numbers on our servers to help you find friends who are using the voicenext service. The encryption algorithm used is a one-way hash function. This means that we cannot reverse the encryption to see your contacts phone numbers.
+If you sign up for the service with your phone number, voicenext will verify your phone number by sending you a verification code. Once your phone number is verified, you may use the voicenext service. voicenext may also access your contacts to help you find friends who are using the voicenext service. voicenext will not share your contacts with third parties without your permission. We will temporarily store an encrypted copy of your contacts phone numbers on our servers to help you find friends who are using the voicenext service. The encryption algorithm used is a one-way hash function. This means that we cannot reverse the encryption to see your contacts phone numbers.
 
 ## 10. Badges
 
@@ -71,7 +71,7 @@ The following third-party services are used by voicenext. Please review the priv
 
 ## 12. Friends
 
-voicenext may access your contacts to help you find friends who are using the voicenext service. If you grant access to your contacts, voicenext will add your contacts automatically as friends without sending them a friend request. You may remove friends at any time in the friends list. You can also send and receive friend requests to and from other users of the voicenext service. If you wish to not to receive friend requests from other users, you can disable this feature in the app settings.
+voicenext may access your contacts to help you find friends who are using the voicenext service. If you grant access to your contacts, voicenext will show your contacts that have been signed up for the service. You may remove friends at any time in the friends list. You can also send and receive friend requests to and from other users of the voicenext service. If you wish to not to receive friend requests from other users, you can disable this feature in the app settings.
 
 ## 13. Security
 
@@ -79,7 +79,7 @@ voicenext takes the security of your personal information seriously. voicenext u
 
 ## 14. Deletion
 
-You may delete your account at any time if you no longer wish to use the voicenext service. When you delete your account, voicenext will delete your personal information from its servers. voicenext may retain certain information about you for legal or business purposes, such as to comply with legal obligations or resolve disputes. The voicenext service will delete voicenotes older than 24 hours automatically. If you save a voicenote, it will be stored on our servers until you unsave it. If you delete your account it may take up to 48 hours to delete all your messages from our servers.
+You may delete your account at any time if you no longer wish to use the voicenext service. When you delete your account, voicenext will delete your personal information from its servers. voicenext may retain certain information about you for legal or business purposes, such as to comply with legal obligations or resolve disputes. The voicenext service will delete voicenotes older than 24 hours after being listened to automatically. If you save a voicenote, it will be stored on our servers until you unsave it. If you delete your account it may take up to 48 hours to delete all your messages from our servers.
 
 ## 15. Right to view
 
@@ -111,7 +111,7 @@ voicenext uses access tokens to authenticate you when you use the voicenext serv
 
 ## 22. Updates to the app
 
-voicenext may send updates to the app through the device's app store. These updates may include bug fixes, performance improvements, and new features. You should review the privacy policy of the app store before using it. voicenext may also deprecate old versions of the app to ensure that you are using the latest version of the app and to retain compatibility, security and integrity with the voicenext service.
+voicenext may send updates to the app through the device's app store. These updates may include bug fixes, performance improvements, and new features. You should review the privacy policy of the app store before using it. voicenext may also deprecate old versions of the app to ensure that you are using the latest version of the app and to retain compatibility, security and integrity with the voicenext service. If you choose not to update the app, you may not be able to use the voicenext service. Alternatively you may use an APK (Android package) file of the voicenext service if you don't wish to use the Google Play Store. If you choose to use that APK file you are responsible for updating the app yourself.
 
 ## 23. Cookies
 

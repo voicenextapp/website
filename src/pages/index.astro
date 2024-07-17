@@ -1,31 +1,56 @@
 ---
 import "@fontsource/geist-mono";
 import "@fontsource/geist-sans";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
 import "../styles/global.scss";
+
 const theme: string = "dark"; // "light"
 ---
 
-<html lang="en">
+<html lang='en' data-theme={theme}>
   <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
+    <meta charset='utf-8' />
+    <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
+    <meta name='viewport' content='width=device-width' />
+    <meta name='generator' content={Astro.generator} />
     <title>voicenext</title>
   </head>
   <body
-    class=`bg-surface-primary text-center font-body text-text-primary ${theme} min-h-screen flex items-center justify-center`
+    class='bg-surface-primary text-center font-body text-text-primary flex items-center justify-center min-h-screen w-full'
   >
-    <div class="max-w-[520px] mx-auto space-y-[24px] px-[10px] text-center">
-      <h1 class="font-display text-4xl sm:text-5xl tracking-tight">
-        communication that is super <span class="text-brand-surface"
-          >easy and fast</span
-        >
+    <div class='flex flex-col items-center gap-sm'>
+      <h1 class='font-display text-4xl sm:text-5xl tracking-tight'>
+        communication that is<br />
+        super <span class='text-brand-surface'>easy and fast</span>
       </h1>
-      <p class="text-base sm:text-xl">
-        voicenext helps you communicate with your friends just by holding down
-        to speak and tap to listen
+      <p class='text-base sm:text-xl'>
+        voicenext helps you communicate with your friends<br />
+        just by holding down to speak and tap to listen
       </p>
+      <form class='flex w-full max-w-3xl justify-center items-center gap-xs'>
+        <Input
+          type='email'
+          placeholder='email'
+          id='email'
+          name='email'
+          onSubmit={async (event) => {
+            await fetch(
+              "https://api.voicenext.app/api/v1/newsletter/subscribe",
+              {
+                method: "POST",
+                body: `{"email": "${event.currentTarget.value}"}`,
+              }
+            ).then(async (res) => console.info(await res.json()));
+          }}
+        />
+        <Button
+          type='submit'
+          label='subscribe'
+          variant='secondary'
+          className='ml-xs'
+        />
+      </form>
     </div>
   </body>
 </html>

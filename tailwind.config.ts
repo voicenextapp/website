@@ -2,11 +2,11 @@ import type { Config } from "tailwindcss";
 import { fontFamily } from "tailwindcss/defaultTheme";
 
 const config: Config = {
-  darkMode: "selector",
+  darkMode: ["selector", '[data-theme="dark"]'],
   content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx,astro}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx,astro}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx,astro}",
+    "./src/pages/**/*.{astro,js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{astro,js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{astro,js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
@@ -60,8 +60,8 @@ const config: Config = {
         },
       },
       fontFamily: {
-        display: ["ClashDisplay-Semibold", ...fontFamily.sans],
-        body: ["var(--font-geist-sans)", ...fontFamily.sans],
+        display: ["var(--font-clash-display)", ...fontFamily.sans],
+        body: ["var(--font-geist)", ...fontFamily.sans],
         mono: ["var(--font-geist-mono)", ...fontFamily.mono],
       },
       spacing: {
@@ -90,6 +90,12 @@ const config: Config = {
       borderWidth: {
         1: "0.063rem",
       },
+      keyframes: {
+        "caret-blink": {
+          "0%,70%,100%": { opacity: "1" },
+          "20%,50%": { opacity: "0" },
+        },
+      },
     },
     spacing: {},
     backgroundImage: {
@@ -97,6 +103,10 @@ const config: Config = {
       "gradient-conic":
         "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
     },
+    animation: {
+      "caret-blink": "caret-blink 1.25s ease-out infinite",
+    },
   },
+  plugins: [require("tailwindcss-animate")],
 };
 export default config;

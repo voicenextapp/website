@@ -9,6 +9,6 @@
             activation_key: new URLSearchParams(location.search).get("activation_key"),
         }),
     }).then((res) => {
-        location.href = "/?activated";
+        location.href = "/?activated=true";
     });
 </script>

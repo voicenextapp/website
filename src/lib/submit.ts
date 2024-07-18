@@ -1,4 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
+    if (new URLSearchParams(location.search).get("activated")) {
+        alert("your email has been verified");
+    }
     const input = document.getElementById('email') as HTMLInputElement;
     const button = document.getElementById('submit') as HTMLButtonElement;
     button.addEventListener('click', () => {

@@ -7,6 +7,7 @@ const config: Config = {
     "./src/pages/**/*.{astro,js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{astro,js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{astro,js,ts,jsx,tsx,mdx}",
+    "./src/layouts/*.{astro,js,ts,jsx,tsx,mdx}"
   ],
   theme: {
     extend: {
@@ -57,6 +58,15 @@ const config: Config = {
           text: "var(--green-text)",
           "text-disabled": "var(--green-text-disabled)",
           "text-accent": "var(--green-text-accent)",
+        },
+        red: {
+          surface: "var(--red-surface)",
+          hover: "var(--red-hover)",
+          disabled: "var(--red-disabled)",
+          accent: "var(--red-accent)",
+          text: "var(--red-text)",
+          "text-disabled": "var(--red-text-disabled)",
+          "text-accent": "var(--red-text-accent)",
         },
       },
       fontFamily: {

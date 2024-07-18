@@ -1,6 +1,7 @@
 ---
 title: voicenext privacy policy
 description: this privacy policy is a legal agreement between you and voicenext that governs how voicenext collects, uses, and shares your personal information.
+layout: "../layouts/TextLayout.astro"
 ---
 
 # Privacy Policy

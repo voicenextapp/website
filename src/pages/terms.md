@@ -1,6 +1,7 @@
 ---
 title: voicenext terms of service
 description: these terms of service are a legal agreement between you and voicenext that governs your use of the voicenext service.
+layout: "../layouts/TextLayout.astro"
 ---
 
 # Terms of Service

@@ -28,7 +28,16 @@ h3,
 h4,
 h5,
 h6 {
-  @apply font-display font-semibold text-text-heading;
+  @apply font-display font-semibold text-text-heading my-2sm;
+}
+
+ul {
+  @apply list-disc list-inside;
+}
+
+h1 {
+  font-size: 2.813rem;
+  line-height: 3.25rem;
 }
 
 h2 {
@@ -43,8 +52,8 @@ h3 {
 
 p {
   @apply font-body text-base font-normal;
+}
 
-  &.footnote {
-    @apply font-mono text-xs text-text-tertiary;
-  }
+.footnote {
+  @apply font-mono text-xs text-text-tertiary;
 }

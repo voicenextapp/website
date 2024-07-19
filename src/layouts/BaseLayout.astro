@@ -12,13 +12,13 @@ const theme: string = "dark"; // "light"
   <head>
     <meta charset='utf-8' />
     <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
-    <meta name='viewport' content='width=device-width' />
+    <meta name='viewport' content='width=device-width, initial-scale=1' />
     <meta name='generator' content={Astro.generator} />
     <link rel='me' href='https://mastodon.social/@voicenext' />
     <title>voicenext</title>
   </head>
   <body
-    class='bg-surface-primary text-center font-body text-text-primary min-h-screen w-full overflow-x-hidden'
+    class='bg-surface-primary text-center font-body text-text-primary min-h-screen w-full overflow-x-hidden fixed flex justify-center items-center'
   >
     <slot />
     <Footer />

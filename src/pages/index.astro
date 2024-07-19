@@ -7,10 +7,12 @@ import { Image } from "astro:assets";
 
 <Layout>
   <div
-    class='flex flex-col lg:flex-row mt-0 md:mt-lg lg:mt-0 items-center justify-center gap-sm lg:gap-4md w-full home-container'
+    class='flex flex-col lg:flex-row items-center justify-center gap-sm lg:gap-4md w-full'
   >
-    <div class='flex flex-col items-center gap-sm max-w-2xl'>
-      <h1 class='font-display text-4xl sm:text-6xl tracking-tight text-balance'>
+    <div class='flex flex-col items-center gap-sm max-w-2xl w-[90%] md:w-[75%]'>
+      <h1
+        class='font-display text-4xl md:text-6xl tracking-tight text-balance w-full'
+      >
         communication that is super <span class='text-brand-surface'
           >easy and fast</span
         >
@@ -20,7 +22,7 @@ import { Image } from "astro:assets";
         to speak and tapping to listen
       </p>
       <div class='flex flex-col items-center gap-xs w-3xl max-w-full'>
-        <div class='flex justify-center items-center gap-xs w-3/4 md:w-full'>
+        <div class='flex justify-center items-center gap-xs w-[95%] md:w-3/4'>
           <Input type='email' placeholder='email' id='email' name='email' />
           <Button
             label='join waitlist'
@@ -45,16 +47,11 @@ import { Image } from "astro:assets";
     </div>
     <Image
       src='/images/mockup.png'
-      class='md:h-[640px] md:w-[556.17px] w-[347.61px] h-[400px]'
+      class='md:h-[640px] md:w-[556.17px] w-[347.61px] h-[400px] object-cover'
       alt='A screenshot showcasing the voicenext app, with built in accessibility features!'
       width={347.61}
       height={400}
     />
   </div>
   <script src='../lib/submit'></script>
-  <style>
-    .home-container {
-      height: calc(100vh - 92px);
-    }
-  </style>
 </Layout>

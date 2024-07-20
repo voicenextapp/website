@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
         alert("you have been unsubscribed");
     }
     const input = document.getElementById('email') as HTMLInputElement;
-    const button = document.getElementById('submit') as HTMLButtonElement;
+    const button = document.getElementById('beta-signup-button') as HTMLButtonElement;
     button.addEventListener('click', () => {
         fetch(
             "https://api.voicenext.app/api/v1/newsletter/subscribe",

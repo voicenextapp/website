@@ -57,7 +57,7 @@ voicenext may use third-party services to provide the voicenext service. These t
 
 The following third-party services are used by voicenext. Please review the privacy policies of these services:
 
-* [Google Cloud Messaging](https://cloud.google.com/messaging)
+* [Firebase Cloud Messaging](https://policies.google.com/privacy)
 * [Apple Push Notification Service](https://developer.apple.com/documentation/usernotifications)
 * [Supabase](https://supabase.io/privacy)
 * [Sentry](https://sentry.io/privacy/)
@@ -66,14 +66,14 @@ The following third-party services are used by voicenext. Please review the priv
 * [Productlane](https://productlane.com/privacy)
 * [Hetzner](https://hetzner.com/privacy)
 * [Netlify](https://netlify.com/privacy)
-* [Gmail for Business (for sending newsletters)](https://policies.google.com/privacy)
+* [Sendgrid by Twilio](https://twilio.com/legal/privacy)
 * [Sign in with Google](https://policies.google.com/privacy)
 * [Sign in with Apple](https://apple.com/legal/privacy)
 * [Umami (for web analytics)](https://umami.is/privacy)
 
 ## 12. Friends
 
-voicenext may access your contacts to help you find friends who are using the voicenext service. If you grant access to your contacts, voicenext will show your contacts that have been signed up for the service. You may remove friends at any time in the friends list. You can also send and receive friend requests to and from other users of the voicenext service. If you wish to not to receive friend requests from other users, you can disable this feature in the app settings.
+voicenext may access your contacts to help you find friends who are using the voicenext service. If you grant access to your contacts, voicenext will show your contacts that have been signed up for the service. You may add and remove friends at any time in the friends list. You can also send and receive friend requests to and from other users of the voicenext service. If you wish to not to receive friend requests from other users, you can disable this feature in the app settings.
 
 ## 13. Security
 

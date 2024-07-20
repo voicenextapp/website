@@ -21,15 +21,10 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         ).then(async (res) => {
             const data = await res.json();
-            if (res.ok) {
-                alert("please verify your email to complete the process");
-            } else {
-                if (data.error) {
-                    alert(data.error.toLowerCase());
-                } else {
-                    alert("something went wrong");
-                }
-            }
+
+            if (res.ok)     return alert("please verify your email to complete the process");
+            if (data.error) return alert(data.error.toLowerCase());
+            alert("something went wrong");
         });
     });
 });

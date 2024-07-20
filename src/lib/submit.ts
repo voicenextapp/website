@@ -20,10 +20,15 @@ document.addEventListener('DOMContentLoaded', () => {
                 body: `{"email": "${input.value}"}`,
             }
         ).then(async (res) => {
+            const data = await res.json();
             if (res.ok) {
                 alert("please verify your email to complete the process");
             } else {
-                alert("something went wrong");
+                if (data.error) {
+                    alert(data.error.toLowerCase());
+                } else {
+                    alert("something went wrong");
+                }
             }
         });
     });

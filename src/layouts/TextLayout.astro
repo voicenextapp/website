@@ -8,23 +8,25 @@ const theme: string = "dark"; // "light"
 ---
 
 <!doctype html>
-<html lang='en' data-theme={theme}>
+<html lang="en" data-theme={theme}>
   <head>
-    <meta charset='utf-8' />
-    <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
-    <meta name='viewport' content='width=device-width' />
-    <meta name='generator' content={Astro.generator} />
-    <link rel='me' href='https://mastodon.social/@voicenext' />
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="me" href="https://mastodon.social/@voicenext" />
     <script
       defer
-      src='https://analytics.voicenext.app/script.js'
-      data-website-id='e41ddde2-8df5-4ed9-8a07-e807dd337f16'></script>
+      src="https://analytics.voicenext.app/script.js"
+      data-website-id="e41ddde2-8df5-4ed9-8a07-e807dd337f16"></script>
     <title>voicenext</title>
   </head>
   <body
-    class='bg-surface-primary font-body text-text-primary min-h-screenoverflow-x-hidden px-[20%] pb-2sm'
+    class="bg-surface-primary font-body text-text-primary min-h-screenoverflow-x-hidden px-[20%] pb-2sm"
   >
-    <slot />
+    <main>
+      <slot />
+    </main>
     <Footer />
   </body>
 </html>

@@ -11,9 +11,18 @@ body {
   }
 }
 
-a {
+main a {
   color: inherit;
   text-decoration: none;
+  border-bottom: 2px solid var(--surface-accent);
+
+  &:hover {
+    border-bottom: none;
+  }
+}
+
+li {
+  margin: 3px 0;
 }
 
 * {

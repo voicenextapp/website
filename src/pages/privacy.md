@@ -69,6 +69,7 @@ The following third-party services are used by voicenext. Please review the priv
 * [Gmail for Business (for sending newsletters)](https://policies.google.com/privacy)
 * [Sign in with Google](https://policies.google.com/privacy)
 * [Sign in with Apple](https://apple.com/legal/privacy)
+* [Umami (for web analytics)](https://umami.is/privacy)
 
 ## 12. Friends
 

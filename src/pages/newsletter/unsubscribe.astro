@@ -1,0 +1,14 @@
+<script is:inline>
+    fetch("https://api.voicenext.app/api/v1/newsletter/unsubscribe",
+    {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+            uuid: new URLSearchParams(location.search).get("uuid"),
+        }),
+    }).then((res) => {
+        location.href = "/?unsubscribed=true";
+    });
+</script>

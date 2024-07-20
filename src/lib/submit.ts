@@ -1,7 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const urlParams = new URLSearchParams(location.search).get('activated');
-    if (urlParams === 'true') {
+    const urlParamsActivated = new URLSearchParams(location.search).get('activated');
+    const urlParamsUnsubscribed = new URLSearchParams(location.search).get('unsubscribed');
+    if (urlParamsActivated === 'true') {
         alert("your email has been verified");
+    }
+    if (urlParamsUnsubscribed === 'true') {
+        alert("you have been unsubscribed");
     }
     const input = document.getElementById('email') as HTMLInputElement;
     const button = document.getElementById('submit') as HTMLButtonElement;

@@ -3,16 +3,18 @@ import tailwind from "@astrojs/tailwind";
 import react from "@astrojs/react";
 import remarkExternalLinks from "remark-external-links";
 
+import netlify from "@astrojs/netlify";
+
 // https://astro.build/config
 export default defineConfig({
-  integrations: [
-    tailwind({
-      configFile: "tailwind.config.ts",
-    }),
-    react(),
-  ],
+  integrations: [tailwind({
+    configFile: "tailwind.config.ts"
+  }), react()],
   markdown: {
-    remarkPlugins: [[remarkExternalLinks, { target: '_blank' }]],
+    remarkPlugins: [[remarkExternalLinks, {
+      target: '_blank'
+    }]]
   },
   output: 'server',
+  adapter: netlify()
 });

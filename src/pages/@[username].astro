@@ -1,20 +1,24 @@
 ---
 const { username } = Astro.params;
 let profile = {
-    username: username,
-    avatar_url: "",
-    display_name: "",
-    accent: "",
-    bio: "",
-    status: "",
-    badges: [],
-    message: "Loading profile...",
+  username: username,
+  avatar_url: "",
+  display_name: "",
+  accent: "",
+  bio: "",
+  status: "",
+  badges: [],
+  message: "Loading profile...",
 };
-await fetch(`https://api.voicenext.app/api/v1/profile/public?username=${username}`).then((res) => res.ok ? res.json() : Astro.redirect("/404")).then((data) => {
-  profile = data;
-});
+await fetch(
+  `https://api.voicenext.app/api/v1/profile/public?username=${username}`
+)
+  .then((res) => (res.ok ? res.json() : Astro.redirect("/404")))
+  .then((data) => {
+    profile = data;
+  });
 
-import Layout from "../layouts/TextLayout.astro"
+import Layout from "../layouts/TextLayout.astro";
 ---
 
 <Layout title={`@${username}`}>

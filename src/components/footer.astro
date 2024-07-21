@@ -7,12 +7,12 @@ const { additionalClass } = Astro.props;
 ---
 
 <div
-  class={`p-4md mt-xs w-full flex justify-center gap-3sm ${additionalClass ?? ""}`}
+  class={`p-2sm pl-0 mt-xs flex justify-start gap-3sm ${additionalClass ?? ""}`}
 >
   <p class='footnote'>©️ voicenext 2024</p>
   <div class='flex justify-center gap-3xs footnote'>
-    <a href='/terms' class='underline'>terms</a>
+    <a href='/terms'>terms</a>
     <span>•</span>
-    <a href='/privacy' class='underline'>privacy policy</a>
+    <a href='/privacy'>privacy policy</a>
   </div>
 </div>

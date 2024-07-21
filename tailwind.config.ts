@@ -7,7 +7,7 @@ const config: Config = {
     "./src/pages/**/*.{astro,js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{astro,js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{astro,js,ts,jsx,tsx,mdx}",
-    "./src/layouts/*.{astro,js,ts,jsx,tsx,mdx}"
+    "./src/layouts/*.{astro,js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
@@ -16,6 +16,7 @@ const config: Config = {
           primary: "var(--surface-primary)",
           secondary: "var(--surface-secondary)",
           tertiary: "var(--surface-tertiary)",
+          accent: "var(--surface-accent)",
         },
         text: {
           heading: "var(--text-heading)",

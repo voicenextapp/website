@@ -1,15 +1,16 @@
 <script is:inline>
-    fetch("https://api.voicenext.app/api/v1/newsletter/unsubscribe",
-    {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-            uuid: new URLSearchParams(location.search).get("uuid"),
-        }),
-    }).then((res) => {
-        location.href = "/?unsubscribed=true";
-    });
+  fetch("https://api.voicenext.app/api/v1/newsletter/unsubscribe", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      uuid: new URLSearchParams(location.search).get("uuid"),
+    }),
+  }).then((res) => {
+    location.href = "/?unsubscribed=true";
+  });
 </script>
-<noscript>please enable javascript in your browser and reload the page to continue</noscript>
+<noscript
+  >please enable javascript in your browser and reload the page to continue</noscript
+>

@@ -42,9 +42,9 @@ import Layout from "../layouts/TextLayout.astro";
     <p class='m0 text-text-primary'>@{profile.username}</p>
   </h1>
   <ul>{
-    profile.badges.map((badge) => {
+    profile.badges ? profile.badges.map((badge) => {
       return <li class="inline-block mr-xs mt-xs"><img src={`/badges/${badge}.svg`} alt={`${badge} badge`} width="24" height="24" /></li>
-    })
+    }) : ""
   }</ul>
   <br /><br />
   <p>{profile.bio ? profile.bio : ""}</p>

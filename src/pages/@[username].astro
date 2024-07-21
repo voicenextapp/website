@@ -29,9 +29,9 @@ import Layout from "../layouts/TextLayout.astro";
         alt={`@${profile.username}`}
         width='120'
         height='120'
-        class='rounded-full border-4 inline mr-3sm float-left align-middle cursor-pointer'
+        class='rounded-full border-4 inline mr-3sm float-left cursor-pointer bg-surface-secondary -mt-3sm hover:brightness-105 transition-all'
         id='avatar'
-        style={`border-color:${profile.accent};margin-top:-16px;`}
+        style={`border-color: ${profile.accent}`}
       />
     ) : (
       ""
@@ -39,7 +39,7 @@ import Layout from "../layouts/TextLayout.astro";
   }
   <h1 class='m-0 mt-2md'>
     {profile.display_name}
-    <h6 class='m0 inline'>@{profile.username}</h6>
+    <p class='m0 text-text-primary'>@{profile.username}</p>
   </h1>
   <br /><br />
   <p>{profile.bio ? profile.bio : ""}</p>

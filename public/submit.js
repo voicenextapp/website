@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const urlParams = new URLSearchParams(location.search).get("activated");
   if (urlParams === "true") {
     toast.success(
-      "you're in! you'll be among the first users to try out voicenext."
+      "you're in! you'll be among the first users to try out voicenext.",
     );
   }
   const input = document.getElementById("email");

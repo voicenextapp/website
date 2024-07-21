@@ -13,9 +13,10 @@ We try to make the terms of service as easy to understand as possible. If you ha
 ## 1. Definitions
 
 In these terms of service, the following terms have the following meanings:
-* "voicenext" means voicenext as a corperate entity
-* "service" means the voicenext service
-* "you" means the user of the voicenext service
+
+- "voicenext" means voicenext as a corperate entity
+- "service" means the voicenext service
+- "you" means the user of the voicenext service
 
 ## 2. Use of the Service
 
@@ -31,15 +32,15 @@ voicenext may provide you with access to voicenext channels. voicenext channels 
 
 You may not use voicenext channels in any way that violates these terms of service. You may not use voicenext channels in any way that violates any applicable law or regulation. You may not use voicenext channels in any way that violates the rights of any third party. This includes, but is not limited to, the use of voicenext channels to send
 
-* pornographic material
-* hate speech
-* spam
-* scams
-* cryptocurrency
-* pyramid schemes
-* illegal drugs
-* weapons
-* violence
+- pornographic material
+- hate speech
+- spam
+- scams
+- cryptocurrency
+- pyramid schemes
+- illegal drugs
+- weapons
+- violence
 
 If we see any of the above, we will take action to remove the content and block the user from using voicenext channels or the voicenext service.
 

@@ -11,9 +11,10 @@ This privacy policy is a legal agreement between you and voicenext that governs 
 ## 1. Definitions
 
 In this privacy policy, the following terms have the following meanings:
-* "voicenext" or "we" means voicenext as a corporate entity
-* "service" means the voicenext service
-* "you" means the user of the voicenext service
+
+- "voicenext" or "we" means voicenext as a corporate entity
+- "service" means the voicenext service
+- "you" means the user of the voicenext service
 
 ## 2. Collection of Personal Information
 
@@ -57,19 +58,19 @@ voicenext may use third-party services to provide the voicenext service. These t
 
 The following third-party services are used by voicenext. Please review the privacy policies of these services:
 
-* [Firebase Cloud Messaging](https://policies.google.com/privacy)
-* [Apple Push Notification Service](https://developer.apple.com/documentation/usernotifications)
-* [Supabase](https://supabase.io/privacy)
-* [Sentry](https://sentry.io/privacy/)
-* [Cloudflare](https://cloudflare.com/privacypolicy/)
-* [Twilio](https://twilio.com/legal/privacy)
-* [Productlane](https://productlane.com/privacy)
-* [Hetzner](https://hetzner.com/privacy)
-* [Netlify](https://netlify.com/privacy)
-* [Sendgrid by Twilio](https://twilio.com/legal/privacy)
-* [Sign in with Google](https://policies.google.com/privacy)
-* [Sign in with Apple](https://apple.com/legal/privacy)
-* [Umami (for web analytics)](https://umami.is/privacy)
+- [Firebase Cloud Messaging](https://policies.google.com/privacy)
+- [Apple Push Notification Service](https://developer.apple.com/documentation/usernotifications)
+- [Supabase](https://supabase.io/privacy)
+- [Sentry](https://sentry.io/privacy/)
+- [Cloudflare](https://cloudflare.com/privacypolicy/)
+- [Twilio](https://twilio.com/legal/privacy)
+- [Productlane](https://productlane.com/privacy)
+- [Hetzner](https://hetzner.com/privacy)
+- [Netlify](https://netlify.com/privacy)
+- [Sendgrid by Twilio](https://twilio.com/legal/privacy)
+- [Sign in with Google](https://policies.google.com/privacy)
+- [Sign in with Apple](https://apple.com/legal/privacy)
+- [Umami (for web analytics)](https://umami.is/privacy)
 
 ## 12. Friends
 

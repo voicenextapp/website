@@ -25,5 +25,5 @@ import Layout from "../layouts/TextLayout.astro"
     <ul>{profile.badges && profile.badges.length > 0 ? profile.badges.forEach((badge) => `<li>${badge}</li>`) : ""}</ul>
     <span class="hidden" id="profile">{JSON.stringify(profile)}</span>
     <audio id="audio" src={profile.status}></audio>
-    <script src="../ts/profile.ts"></script>
+    <script src="../js/profile.js"></script>
 </Layout>

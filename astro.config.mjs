@@ -14,4 +14,5 @@ export default defineConfig({
   markdown: {
     remarkPlugins: [[remarkExternalLinks, { target: '_blank' }]],
   },
+  output: 'server',
 });

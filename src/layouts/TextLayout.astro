@@ -19,7 +19,7 @@ const theme: string = "dark"; // "light"
       defer
       src="https://analytics.voicenext.app/script.js"
       data-website-id="e41ddde2-8df5-4ed9-8a07-e807dd337f16"></script>
-    <title>voicenext</title>
+    <title>{Astro.props.title ? Astro.props.title : Astro.props.frontmatter.title} - voicenext</title>
   </head>
   <body
     class="bg-surface-primary font-body text-text-primary min-h-screenoverflow-x-hidden px-[20%] pb-2sm"

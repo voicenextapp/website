@@ -1,29 +1,56 @@
 ---
 const { username } = Astro.params;
 let profile = {
-    username: username,
-    avatar_url: "",
-    display_name: "",
-    accent: "",
-    bio: "",
-    status: "",
-    badges: [],
-    message: "Loading profile...",
+  username: username,
+  avatar_url: "",
+  display_name: "",
+  accent: "",
+  bio: "",
+  status: "",
+  badges: [],
+  message: "Loading profile...",
 };
-await fetch(`https://api.voicenext.app/api/v1/profile/public?username=${username}`).then((res) => res.ok ? res.json() : Astro.redirect("/404")).then((data) => {
-  profile = data;
-});
+await fetch(
+  `https://api.voicenext.app/api/v1/profile/public?username=${username}`
+)
+  .then((res) => (res.ok ? res.json() : Astro.redirect("/404")))
+  .then((data) => {
+    profile = data;
+  });
 
-import Layout from "../layouts/TextLayout.astro"
+import Layout from "../layouts/TextLayout.astro";
 ---
 
 <Layout title={`@${username}`}>
-    {profile.avatar_url !== "" ? <img src={profile.avatar_url} alt={`@${profile.username}`} width="120" height="120" class="rounded-full border-4 inline mr-3sm float-left align-middle cursor-pointer" id="avatar" style={`border-color:${profile.accent};margin-top:-16px;`} /> : ""}
-    <h1 class="m-0 mt-2md">{profile.display_name} <h6 class="m0 inline">@{profile.username}</h6></h1>
-    <br><br>
-    <p>{profile.bio ? profile.bio : ""}</p>
-    <ul>{profile.badges && profile.badges.length > 0 ? profile.badges.forEach((badge) => `<li>${badge}</li>`) : ""}</ul>
-    <span class="hidden" id="profile">{JSON.stringify(profile)}</span>
-    <audio id="audio" src={profile.status}></audio>
-    <script src="../js/profile.js"></script>
+  {
+    profile.avatar_url !== "" ? (
+      <img
+        src={profile.avatar_url}
+        alt={`@${profile.username}`}
+        width='120'
+        height='120'
+        class='rounded-full border-4 inline mr-3sm float-left align-middle cursor-pointer'
+        id='avatar'
+        style={`border-color:${profile.accent};margin-top:-16px;`}
+      />
+    ) : (
+      ""
+    )
+  }
+  <h1 class='m-0 mt-2md'>
+    {profile.display_name}
+    <h6 class='m0 inline'>@{profile.username}</h6>
+  </h1>
+  <br /><br />
+  <p>{profile.bio ? profile.bio : ""}</p>
+  <ul>
+    {
+      profile.badges && profile.badges.length > 0
+        ? profile.badges.forEach((badge) => `<li>${badge}</li>`)
+        : ""
+    }
+  </ul>
+  <span class='hidden' id='profile'>{JSON.stringify(profile)}</span>
+  <audio id='audio' src={profile.status}></audio>
+  <script src='../js/profile.js'></script>
 </Layout>

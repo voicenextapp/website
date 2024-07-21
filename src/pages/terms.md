@@ -97,19 +97,22 @@ If you have any questions about these terms of service, please contact voicenext
 
 ## 18. Impressum
 
-**voicenext**<br>
-Dorfstr. 34<br>
-24217 Wisch<br>
+**voicenext**
+
+Dorfstr. 34
+
+24217 Wisch
+
 Deutschland
-<br><br>
+<br /><br />
 Website: https://voicenext.app
 
 E-Mail: business@voicenext.app
-<br><br>
+<br /><br />
 **Vertreten durch:** Leonie Ain
 
 **Datenschutzbeauftragte:** Leonie Ain
-<br><br>
+<br /><br />
 **Technische Angaben:**
 
 Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung für die Inhalte externer Links. Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich. Alle hier verwendeten Namen, Begriffe, Zeichen und Grafiken können Marken- oder Warenzeichen im Besitze ihrer rechtlichen Eigentümer sein. Die Rechte aller erwähnten und benutzten Marken- und Warenzeichen liegen ausschließlich bei deren Besitzern.

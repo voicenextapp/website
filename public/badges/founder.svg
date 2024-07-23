@@ -29,7 +29,7 @@
     </defs>
     <style>
         .darken {
-            filter: brightness(65%)
+            filter: brightness(50%)
         }
     </style>
 </svg>

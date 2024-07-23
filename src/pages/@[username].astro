@@ -41,11 +41,24 @@ import Layout from "../layouts/TextLayout.astro";
     {profile.display_name}
     <p class='m0 text-text-primary'>@{profile.username}</p>
   </h1>
-  <ul>{
-    profile.badges ? profile.badges.map((badge) => {
-      return <li class="inline-block mr-xs mt-xs"><img src={`/badges/${badge}.svg`} alt={`${badge} badge`} width="24" height="24" /></li>
-    }) : ""
-  }</ul>
+  <ul>
+    {
+      profile.badges
+        ? profile.badges.map((badge) => {
+            return (
+              <li class='inline-block mr-xs mt-xs'>
+                <img
+                  src={`/badges/${badge}.svg`}
+                  alt={`${badge} badge`}
+                  width='24'
+                  height='24'
+                />
+              </li>
+            );
+          })
+        : ""
+    }
+  </ul>
   <br /><br />
   <p>{profile.bio ? profile.bio : ""}</p>
   <span class='hidden' id='profile'>{JSON.stringify(profile)}</span>

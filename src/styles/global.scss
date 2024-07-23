@@ -3,8 +3,7 @@
 
 html,
 body {
-  padding: 0;
-  margin: 0;
+  @apply transition-all ease-out duration-300 p-0 m-0;
 
   &[data-theme="black"] {
     color-scheme: dark;
@@ -12,10 +11,10 @@ body {
 }
 
 a {
-  @apply text-inherit no-underline border-b-1 border-surface-accent;
+  @apply text-inherit underline transition-colors;
 
   &:hover {
-    @apply border-text-tertiary;
+    @apply text-text-heading;
   }
 }
 

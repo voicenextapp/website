@@ -84,7 +84,7 @@ voicenext may use third-party components in its app, website or services. These 
 
 These terms of service are governed by the laws of Germany and the European Union. You agree to submit to the exclusive jurisdiction of the courts of Germany and the European Union. If you live outside of Germany or the European Union, you may have additional rights under the laws of your country.
 
-## 15. Lanugage
+## 15. Language
 
 As voicenext is a global service, these terms of service are available in English only.
 

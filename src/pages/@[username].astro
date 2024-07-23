@@ -25,7 +25,7 @@ import Layout from "../layouts/TextLayout.astro";
   {
     profile.avatar_url !== "" ? (
       <img
-        src={profile.avatar_url}
+        src={`https://cdn.voicenext.app/${profile.avatar_url}`}
         alt={`@${profile.username}`}
         width='120'
         height='120'

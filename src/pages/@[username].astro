@@ -59,7 +59,7 @@ import Layout from "../layouts/TextLayout.astro";
   <br /><br />
   <p set:html={profile.bio ? profile.bio.replaceAll("<", "").replaceAll(">", "").replaceAll("\n", "<br>") : ""}></p>
   <span class='hidden' id='profile'>{JSON.stringify(profile)}</span>
-  <audio id='audio' src={profile.status}></audio>
+  <audio id='audio' src={`https://cdn.voicenext.app/${profile.status}`}></audio>
   <script src='../js/profile.js'></script>
   <style>
     .accent-color-brand {

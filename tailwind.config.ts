@@ -69,6 +69,15 @@ const config: Config = {
           "text-disabled": "var(--red-text-disabled)",
           "text-accent": "var(--red-text-accent)",
         },
+        yellow: {
+          surface: "var(--yellow-surface)",
+          hover: "var(--yellow-hover)",
+          disabled: "var(--yellow-disabled)",
+          accent: "var(--yellow-accent)",
+          text: "var(--yellow-text)",
+          "text-disabled": "var(--yellow-text-disabled)",
+          "text-accent": "var(--yellow-text-accent)",
+        },
       },
       fontFamily: {
         display: ["var(--font-clash-display)", ...fontFamily.sans],

@@ -27,7 +27,7 @@ import Layout from "../layouts/TextLayout.astro";
       <img
         src={`https://cdn.voicenext.app/${profile.avatar_url}`}
         alt={`@${profile.username}`}
-        class={`rounded-full border-4 inline mr-3sm float-left cursor-pointer bg-surface-secondary -mt-3sm hover:brightness-105 transition-all w-4lg h-4lg object-cover border-${profile.accent}-surface`}
+        class={`rounded-full border-4 inline mr-3sm float-left cursor-pointer bg-surface-secondary -mt-3sm hover:brightness-105 transition-all w-4lg h-4lg object-cover accent-color-${profile.accent}`}
         id='avatar'
       />
     ) : (
@@ -61,4 +61,24 @@ import Layout from "../layouts/TextLayout.astro";
   <span class='hidden' id='profile'>{JSON.stringify(profile)}</span>
   <audio id='audio' src={profile.status}></audio>
   <script src='../js/profile.js'></script>
+  <style>
+    .accent-color-brand {
+      @apply border-brand-surface bg-brand-accent;
+    }
+    .accent-color-pink {
+      @apply border-pink-surface bg-pink-accent;
+    }
+    .accent-color-blue {
+      @apply border-blue-surface bg-blue-accent;
+    }
+    .accent-color-green {
+      @apply border-green-surface bg-green-accent;
+    }
+    .accent-color-yellow {
+      @apply border-yellow-surface bg-yellow-accent;
+    }
+    .accent-color-red {
+      @apply border-red-surface bg-red-accent;
+    }
+  </style>
 </Layout>
